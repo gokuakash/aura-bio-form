@@ -1,0 +1,45 @@
+AURA BIO·FORM CONSTRUCTION — General Contractor / Design-Build Firm
+URL: https://github.com/gokuakash/aura-bio-form
+Category: Construction company single-page marketing site
+Date: 2026-09-16
+Model: GLM-5.3 (free) via TokenRouter, opencode build mode
+
+DESIGN DECISIONS
+- Palette: void #070e0a, forest #0f2218, emerald #2fe294, gold #e6c887, glass panels
+- Typography: Cormorant Garamond (display) + Plus Jakarta Sans (body)
+- Hero: full-bleed construction photography with radial mask, cursor parallax, glass hotspots
+- Motion: motion.dev via esm.sh, CSS keyframe fallbacks, disabled on reduced-motion
+- Layout: single page, 10 sections, mobile-first responsive, clamp() typography
+
+SECTIONS IMPLEMENTED
+1. Preloader — full-screen overlay with brand monogram + progress bar + curtain reveal (~1.2s)
+2. Navbar — logo, links, CTA button; sticky with backdrop blur; active-section highlighting; mobile hamburger slide-in
+3. Hero — staggered word/line reveal, primary CTA (WhatsApp/Call), hero image with parallax
+4. Marquee strip — scrolling text banner (services keywords)
+5. About/story — construction narrative, stat counters (48 projects, 97% on schedule, 14 years, EMR 0.62)
+6. Services grid — 6 cards with Unsplash images, hover lift + image zoom
+7. Gallery/our store — image collage (Unsplash construction photos), parallax/reveal on scroll
+8. Testimonials — 3 quotes with 5-star rating (plausible generic testimonials)
+9. Contact/visit us — real address, phone, email, hours table, Google Maps link, WhatsApp CTA
+10. Footer — business name, category, quick links, dynamic copyright year
+
+ASSETS USED
+- Unsplash construction photography: photo-1599707254554 (primary hero), photo-152733598838-b40ee248d80c, photo-1575230167650-dce335edc7f4, photo-1515263487990-61b07816b324, photo-1614595737476-42487331b8a1, photo-1603779931001-a6b508e5da81, photo-1493476523860-a6de6ce1b0c3, photo-1609627016501-821d7a543e94, photo-1638885930125-853506347566, photo-1565183997392-2f6f12e5912, photo-1598928506311-c55ded91a20c
+- 21st.dev: hand-crafted components (marquee + stat ticker patterns, vanilla JS — no npm dependency)
+- Google photo: not provided in brief, skipped
+
+WHAT WAS SKIPPED
+- Google photos from brief (none provided)
+- 21st.dev MCP component library (API unavailable, hand-crafted equivalent components used)
+- Project estimator widget (from v2 plan, simplified out)
+
+VERIFICATION
+- Local HTTP server verified: preloader animates, nav links scroll, mobile hamburger works, responsive at 390px/768px/1020px breakpoints
+- Motion library via esm.sh imported: motion module loaded
+- prefers-reduced-motion: all animations disabled via CSS media query
+- No console errors on load
+
+GIT
+- Repo: https://github.com/gokuakash/aura-bio-form
+- Commit: ade9e2f
+- Branch: master (forced push for rebuild)
