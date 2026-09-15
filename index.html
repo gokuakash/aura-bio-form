@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Aura Bio·Form Construction — Commercial &amp; Industrial General Contractor</title>
+<meta name="description" content="Aura Bio·Form Construction — general contractor and design-build firm. Commercial, residential and industrial construction delivered on schedule. Concrete, steel, and full-scope delivery."/>
+<link rel="canonical" href="https://aurabioform.com/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Aura Bio·Form Construction — General Contractor"/>
+<meta property="og:description" content="General contractor and design-build firm. On-schedule commercial and industrial construction."/>
+<meta property="og:image" content="https://images.unsplash.com/photo-1599707254554-027aeb4deacd?w=1200&q=80"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='11' fill='%23070e0a'/%3E%3Cpath d='M12 3a9 9 0 1 0 9 9c0-4.97-4.03-9-9-9zm0 4a5 5 0 1 0 5 5c0-2.76-2.24-5-5-5zm0 3a2 2 0 1 0 2 2' fill='none' stroke='%23e6c887' stroke-width='1.4'/%3E%3C/svg%3E"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Plus+Jakarta Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"GeneralContractor","name":"Aura Bio·Form Construction Co.","description":"General contractor and design-build firm — commercial, residential and industrial construction.","slogan":"Built on Schedule. Built to Last.","email":"studio@aurabioform.com","telephone":"+1-555-014-8894","areaServed":"Worldwide","knowsAbout":["General contracting","Design-build","Structural steel","Concrete works","Construction management"],"address":{"@type":"PostalAddress","streetAddress":"1400 NW Everett St","addressLocality":"Portland","addressRegion":"OR","postalCode":"97209","addressCountry":"US"}}
+</script>
+<style>
+:root{
+  --void:#070e0a;--dark:#0a1410;--forest:#0f2218;--emerald:#2fe294;--gold:#e6c887;--goldglow:#f3d99d;
+  --ink:#e8e6e3;--muted:#9aa89e;--faint:#5c6b60;
+  --serif:'Cormorant Garamond',Georgia,serif;--sans:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;
+  --glass:rgba(14,26,20,.62);--glass-brd:rgba(255,255,255,.08);
+  --ease:cubic-bezier(.22,1,.36,1);--radius:16px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--void);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+::selection{background:rgba(47,226,148,.3);color:#fff}
+::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--void)}::-webkit-scrollbar-thumb{background:#1d3529;border-radius:99px}
+
+/* ---------- PRELOADER ---------- */
+#preloader{position:fixed;inset:0;z-index:200;background:var(--void);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2rem;transition:opacity .7s var(--ease),visibility .7s}
+#preloader.done{opacity:0;visibility:hidden;pointer-events:none}
+.pl-mark{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 30% 30%,rgba(230,200,135,.18),rgba(47,226,148,.12));border:1px solid rgba(230,200,135,.35);box-shadow:0 0 30px rgba(230,200,135,.25);animation:plSpin 2.8s linear infinite}
+.pl-mark svg{width:30px;height:30px;color:#f3d99d}
+@keyframes plSpin{to{transform:rotate(360deg)}}
+.pl-bar{width:220px;height:1px;background:rgba(255,255,255,.1);border-radius:99px;overflow:hidden}
+.pl-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#2fe294,#e6c887);border-radius:99px;animation:plLoad 1.2s ease-out forwards}
+@keyframes plLoad{to{width:100%}}
+.pl-num{font-variant-numeric:tabular-nums;font-size:.7rem;letter-spacing:.35em;color:var(--muted)}
+.pl-cap{font-size:.65rem;letter-spacing:.5em;color:var(--faint);text-transform:uppercase}
+
+/* ---------- NAV ---------- */
+#nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.1rem clamp(1rem,4vw,2.5rem);display:flex;align-items:center;justify-content:space-between;transition:background .4s,backdrop-filter .4s,border-color .4s;border-bottom:1px solid transparent}
+#nav.scrolled{background:rgba(7,14,10,.72);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom-color:rgba(255,255,255,.06)}
+.brand{display:flex;align-items:center;gap:.9rem}
+.brand-orb{position:relative;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,rgba(252,211,77,.2),rgba(47,226,148,.3));border:1px solid rgba(230,200,135,.35);box-shadow:0 0 20px rgba(230,200,135,.28);transition:transform .5s var(--ease)}
+.brand:hover .brand-orb{transform:scale(1.06)}
+.brand-orb svg{width:22px;height:22px;color:#f3d99d;animation:plSpin 28s linear infinite}
+.brand-name{font-size:.7rem;letter-spacing:.28em;font-weight:500;color:rgba(214,240,227,.85);text-transform:uppercase}
+.nav-pill{display:flex;gap:.25rem;padding:.35rem .9rem;border-radius:99px;background:var(--glass);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--glass-brd);box-shadow:0 8px 32px rgba(0,0,0,.5)}
+.nav-pill a{position:relative;padding:.55rem 1.1rem;border-radius:99px;font-size:.72rem;font-weight:500;color:var(--muted);transition:color .25s}
+.nav-pill a:hover,.nav-pill a.active{color:#fff}
+.nav-pill a.active{background:linear-gradient(90deg,rgba(47,226,148,.18),rgba(230,200,135,.14));box-shadow:inset 0 0 0 1px rgba(47,226,148,.3)}
+#nav-burger{display:none;width:44px;height:44px;border-radius:50%;background:var(--glass);backdrop-filter:blur(20px);border:1px solid var(--glass-brd);place-items:center}
+#nav-burger svg{width:20px;height:20px;color:var(--ink)}
+#mobile-menu{position:fixed;inset:0;z-index:150;background:rgba(7,14,10,.96);backdrop-filter:blur(24px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.6rem;opacity:0;visibility:hidden;transition:.4s var(--ease)}
+#mobile-menu.open{opacity:1;visibility:visible}
+#mobile-menu a{font-family:var(--serif);font-size:clamp(2rem,7vw,3rem);font-weight:400;color:var(--ink);transition:color .25s,letter-spacing .3s}
+#mobile-menu a:hover{color:var(--emerald);letter-spacing:.06em}
+#mm-close{position:absolute;top:1.2rem;right:1.4rem;width:48px;height:48px;border-radius:50%;background:var(--glass);border:1px solid var(--glass-brd);display:grid;place-items:center}
+@media(max-width:900px){.nav-pill{display:none}#nav-burger{display:grid}}
+
+/* ---------- HERO ---------- */
+#hero{position:relative;min-height:100svh;display:flex;flex-direction:column;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden}
+.hero-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 38%;transform:scale(1.08);will-change:transform;-webkit-mask-image:radial-gradient(ellipse 90% 78% at 50% 46%,#000 40%,rgba(0,0,0,.85) 62%,transparent 88%);mask-image:radial-gradient(ellipse 90% 78% at 50% 46%,#000 40%,rgba(0,0,0,.85) 62%,transparent 88%)}
+.hero-halo{position:absolute;border-radius:50%;filter:blur(140px);pointer-events:none}
+.halo-1{top:6%;left:18%;width:min(720px,70vw);height:min(720px,70vw);background:rgba(5,150,105,.16);animation:haloPulse 7s ease-in-out infinite}
+.halo-2{top:-4rem;left:44%;width:min(640px,60vw);height:min(640px,60vw);background:rgba(245,158,11,.10)}
+.halo-3{bottom:-6rem;right:10%;width:min(700px,65vw);height:min(650px,60vw);background:rgba(6,78,59,.18)}
+@keyframes haloPulse{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:.85;transform:scale(1.06)}}
+.hero-vignette{position:absolute;inset:0;z-index:2;background:radial-gradient(ellipse at 50% 40%,transparent 30%,rgba(7,14,10,.42) 68%,rgba(7,14,10,.92) 100%)}
+.hero-contour{position:absolute;inset:0;z-index:2;opacity:.25;pointer-events:none}
+.mote{position:absolute;z-index:2;border-radius:50%;filter:blur(1px);pointer-events:none}
+.mote-1{top:26%;left:33%;width:8px;height:8px;background:#6ee7b7;box-shadow:0 0 14px #2fe294;animation:moteFloat 7s ease-in-out infinite}
+.mote-2{top:47%;left:47%;width:6px;height:6px;background:#fde68a;box-shadow:0 0 12px #fde68a;animation:moteFloat 8s ease-in-out 2.5s infinite}
+.mote-3{bottom:29%;left:61%;width:10px;height:10px;background:#34d399;box-shadow:0 0 16px #2fe294;animation:moteFloat 7s ease-in-out 1.2s infinite}
+@keyframes moteFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.hero-shell{position:relative;z-index:10;flex:1;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(5.5rem,9vh,7rem) clamp(1.2rem,4vw,2.6rem) clamp(1rem,3vh,1.8rem);pointer-events:none}
+.hero-shell>*{pointer-events:auto}
+.hero-grid{flex:1;display:grid;grid-template-columns:repeat(12,1fr);align-items:center;gap:clamp(1rem,2.5vw,2rem);min-height:0;padding-block:1rem}
+.hero-left{grid-column:span 4;max-width:560px}
+.hero-badge{display:inline-flex;align-items:center;gap:.55rem;padding:.5rem 1rem;border-radius:99px;background:var(--glass);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(47,226,148,.25);box-shadow:0 0 15px rgba(47,226,148,.15);font-size:.6rem;letter-spacing:.22em;font-weight:600;color:#6ee7b7;text-transform:uppercase}
+.hero-badge .dot{width:6px;height:6px;border-radius:50%;background:var(--emerald);box-shadow:0 0 8px #2fe294;animation:motePing 1.8s ease-in-out infinite}
+@keyframes motePing{0%,100%{opacity:1}50%{opacity:.3}}
+.hero-title{margin-top:1.5rem;font-family:var(--serif);font-weight:300;font-size:clamp(2.6rem,5.4vw,4.4rem);line-height:1.04;letter-spacing:-.01em;color:#fafaf9;text-shadow:0 4px 24px rgba(0,0,0,.8)}
+.hero-title .it{font-style:italic;font-weight:300;background:linear-gradient(90deg,#a7f3d0,#fff,#f3d99d);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-sub{margin-top:1.4rem;font-size:clamp(.9rem,1.1vw,1.02rem);color:rgba(214,231,221,.88);max-width:26rem;text-shadow:0 2px 10px rgba(0,0,0,.8)}
+.hero-ctas{margin-top:2rem;display:flex;flex-wrap:wrap;gap:1rem}
+.btn-primary{position:relative;display:inline-flex;align-items:center;gap:.6rem;padding:1rem 1.7rem;border-radius:99px;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#04241a;background:linear-gradient(90deg,#2fe294,#aee888,#e6c887);box-shadow:0 4px 24px rgba(47,226,148,.4);transition:transform .3s var(--ease),box-shadow .3s}
+.btn-primary:hover{transform:translateY(-2px) scale(1.03);box-shadow:0 8px 32px rgba(47,226,148,.55)}
+.btn-outline{display:inline-flex;align-items:center;gap:.6rem;padding:1rem 1.7rem;border-radius:99px;font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#e8e6e3;border:1px solid rgba(255,255,255,.15);transition:border-color .3s,background .3s}
+.btn-outline:hover{border-color:rgba(47,226,148,.5);background:rgba(47,226,148,.1)}
+.hero-side{grid-column:span 8;display:flex;flex-direction:column;gap:1.5rem}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1rem}
+.stat-card{background:var(--glass);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--glass-brd);border-radius:14px;padding:1.2rem 1rem;text-align:center}
+.stat-val{font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.6rem);font-weight:600;color:#f3d99d}
+.stat-lbl{font-size:.65rem;letter-spacing:.18em;color:var(--muted);text-transform:uppercase;margin-top:.3rem}
+
+/* ---------- MARQUEE ---------- */
+#marquee{background:var(--dark);border-top:1px solid rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.04);padding:.8rem 0;overflow:hidden;position:relative}
+.marquee-track{display:flex;animation:marqueeScroll 30s linear infinite;white-space:nowrap}
+.marquee-item{display:inline-flex;align-items:center;gap:.6rem;padding:0 2rem;font-size:.75rem;font-weight:500;letter-spacing:.15em;color:var(--muted);text-transform:uppercase}
+.marquee-item .dot{width:4px;height:4px;border-radius:50%;background:var(--emerald)}
+@keyframes marqueeScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.marquee-track{animation:none}}
+
+/* ---------- SECTIONS ---------- */
+section{position:relative;padding:clamp(5rem,10vh,8rem) clamp(1.2rem,4vw,2.6rem)}
+.section-tag{display:inline-flex;align-items:center;gap:.5rem;font-size:.6rem;letter-spacing:.3em;font-weight:600;color:var(--emerald);text-transform:uppercase;margin-bottom:1rem}
+.section-tag::before{content:"";width:20px;height:1px;background:var(--emerald)}
+.section-title{font-family:var(--serif);font-size:clamp(2rem,4vw,3.2rem);font-weight:400;color:#fafaf9;line-height:1.1;letter-spacing:-.01em}
+.section-desc{font-size:clamp(.95rem,1.2vw,1.1rem);color:var(--muted);max-width:36rem;margin-top:1rem;line-height:1.7}
+
+/* ---------- ABOUT ---------- */
+#about{background:var(--dark)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center;margin-top:3rem}
+.about-text p{font-size:1.05rem;color:rgba(214,231,221,.85);line-height:1.8;margin-bottom:1.2rem}
+.about-features{display:flex;flex-direction:column;gap:1.5rem;margin-top:2rem}
+.about-feat{display:flex;gap:1rem;align-items:flex-start}
+.about-feat .icon{width:40px;height:40px;border-radius:10px;background:rgba(47,226,148,.1);display:grid;place-items:center;flex:none;color:var(--emerald);font-size:.9rem}
+.about-feat h4{font-family:var(--serif);font-size:1.1rem;font-weight:500;color:#fafaf9;margin-bottom:.2rem}
+.about-feat p{font-size:.85rem;color:var(--muted);line-height:1.5}
+
+/* ---------- SERVICES ---------- */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.service-card{background:var(--dark);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:2rem;transition:transform .4s var(--ease),box-shadow .4s,border-color .4s;overflow:hidden}
+.service-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px -20px rgba(47,226,148,.2);border-color:rgba(47,226,148,.2)}
+.service-card .card-img{width:100%;height:200px;object-fit:cover;border-radius:10px;margin-bottom:1.2rem;transition:transform .6s var(--ease)}
+.service-card:hover .card-img{transform:scale(1.05)}
+.service-card h3{font-family:var(--serif);font-size:1.25rem;font-weight:500;color:#fafaf9;margin-bottom:.5rem}
+.service-card p{font-size:.85rem;color:var(--muted);line-height:1.6}
+.service-card .card-link{display:inline-flex;align-items:center;gap:.4rem;margin-top:1rem;font-size:.75rem;font-weight:600;color:var(--emerald);letter-spacing:.05em;transition:gap .3s}
+.service-card:hover .card-link{gap:.8rem}
+@media(max-width:900px){.services-grid{grid-template-columns:1fr}}
+
+/* ---------- GALLERY ---------- */
+#gallery{background:var(--forest)}
+.gallery-collage{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:auto;gap:.75rem;margin-top:3rem}
+.gallery-collage .g-item{position:relative;overflow:hidden;border-radius:12px;aspect-ratio:auto;border:1px solid rgba(255,255,255,.06)}
+.gallery-collage .g-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.gallery-collage .g-item:hover img{transform:scale(1.08)}
+.gallery-collage .g-item:nth-child(1){grid-column:span 2;grid-row:span 2;aspect-ratio:4/5}
+.gallery-collage .g-item:nth-child(2){grid-column:span 1;grid-row:span 1;aspect-ratio:1/1}
+.gallery-collage .g-item:nth-child(3){grid-column:span 1;grid-row:span 1;aspect-ratio:1/1}
+.gallery-collage .g-item:nth-child(4){grid-column:span 1;grid-row:span 1;aspect-ratio:1/1}
+.gallery-collage .g-item:nth-child(5){grid-column:span 2;aspect-ratio:16/9}
+.gallery-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(7,14,10,.8),transparent 60%);pointer-events:none}
+@media(max-width:768px){.gallery-collage{grid-template-columns:repeat(2,1fr)}.gallery-collage .g-item:nth-child(1){grid-column:span 2}}
+
+/* ---------- TESTIMONIALS ---------- */
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.testimonial-card{background:var(--dark);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:2rem;position:relative}
+.testimonial-card .stars{color:var(--gold);font-size:.8rem;letter-spacing:.1em;margin-bottom:1rem}
+.testimonial-card .quote{font-family:var(--serif);font-size:1.1rem;font-style:italic;color:rgba(214,231,221,.9);line-height:1.7;margin-bottom:1.2rem}
+.testimonial-card .author{font-size:.8rem;color:var(--muted)}
+.testimonial-card .author strong{color:var(--ink)}
+.testimonial-card .role{font-size:.7rem;color:var(--faint)}
+@media(max-width:900px){.testimonials-grid{grid-template-columns:1fr}}
+
+/* ---------- CONTACT ---------- */
+#contact{background:var(--dark)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);margin-top:3rem}
+.contact-info{display:flex;flex-direction:column;gap:1.5rem}
+.contact-item{display:flex;gap:1rem;align-items:flex-start}
+.contact-item .c-icon{width:44px;height:44px;border-radius:12px;background:rgba(47,226,148,.08);display:grid;place-items:center;color:var(--emerald);flex:none}
+.contact-item h4{font-family:var(--serif);font-size:1rem;font-weight:500;color:#fafaf9;margin-bottom:.2rem}
+.contact-item p,.contact-item a{font-size:.85rem;color:var(--muted);line-height:1.5}
+.contact-item a:hover{color:var(--emerald)}
+.hours-table{width:100%;border-collapse:collapse;margin-top:.5rem}
+.hours-table td{padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:.85rem;color:var(--muted)}
+.hours-table td:last-child{color:var(--ink);text-align:right}
+.contact-form{display:flex;flex-direction:column;gap:1rem}
+.contact-form input,.contact-form textarea{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:.8rem 1rem;color:var(--ink);font-family:var(--sans);font-size:.9rem;outline:none;transition:border-color .3s}
+.contact-form input:focus,.contact-form textarea:focus{border-color:rgba(47,226,148,.5)}
+.contact-form textarea{resize:vertical;min-height:100px}
+.contact-form .btn-submit{background:linear-gradient(90deg,#2fe294,#e6c887);color:#04241a;font-weight:700;border:none;cursor:pointer;padding:1rem 2rem;border-radius:99px;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;transition:transform .3s}
+.contact-form .btn-submit:hover{transform:scale(1.03)}
+.map-wrap{border-radius:12px;overflow:hidden;margin-top:1rem;border:1px solid rgba(255,255,255,.08)}
+.map-wrap img{width:100%;height:250px;object-fit:cover}
+
+/* ---------- FOOTER ---------- */
+footer{background:var(--void);border-top:1px solid rgba(255,255,255,.06);padding:3rem clamp(1.2rem,4vw,2.6rem)}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:2rem}
+.footer-brand .foot-name{font-family:var(--serif);font-size:1.3rem;font-weight:500;color:#fafaf9}
+.footer-brand .foot-cat{font-size:.7rem;letter-spacing:.2em;color:var(--muted);text-transform:uppercase;margin-top:.3rem}
+.footer-links{display:flex;gap:2rem}
+.footer-links a{font-size:.8rem;color:var(--muted);transition:color .3s}
+.footer-links a:hover{color:var(--emerald)}
+.footer-copy{font-size:.7rem;color:var(--faint);margin-top:1.5rem;text-align:center;width:100%}
+
+/* ---------- MOTION ANIMATIONS ---------- */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.15s}
+.reveal-delay-2{transition-delay:.3s}
+.reveal-delay-3{transition-delay:.45s}
+.reveal-delay-4{transition-delay:.6s}
+@media(prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .service-card,.testimonial-card,.gallery-collage .g-item{transition:none}
+  .service-card:hover .card-img,.service-card:hover{transition:none;transform:none}
+  .gallery-collage .g-item:hover img{transition:none;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader" aria-label="Loading">
+  <div class="pl-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="11"/><path d="M12 3a9 9 0 1 0 9 9c0-4.97-4.03-9-9-9z"/><path d="M12 3a5 5 0 0 0 5 5" stroke="#f3d99d"/></svg></div>
+  <div class="pl-bar"><i></i></div>
+  <div class="pl-num">00%</div>
+  <div class="pl-cap">Aura Bio·Form</div>
+</div>
+
+<!-- NAVBAR -->
+<header id="nav" role="banner">
+  <div class="brand">
+    <span class="brand-orb" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></span>
+    <span class="brand-name">Aura Bio·Form</span>
+  </div>
+  <nav class="nav-pill" aria-label="Primary">
+    <a href="#about" data-nav>About</a>
+    <a href="#services" data-nav>Services</a>
+    <a href="#gallery" data-nav>Projects</a>
+    <a href="#contact" data-nav>Contact</a>
+  </nav>
+  <button id="nav-burger" aria-label="Open menu" aria-expanded="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+</header>
+<div id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <button id="mm-close" aria-label="Close menu">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <a href="#about" class="mobile-link" data-nav>About</a>
+  <a href="#services" class="mobile-link" data-nav>Services</a>
+  <a href="#gallery" class="mobile-link" data-nav>Projects</a>
+  <a href="#contact" class="mobile-link" data-nav>Contact</a>
+</div>
+
+<main>
+<!-- HERO -->
+<section id="hero" aria-labelledby="hero-title">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1599707254554-027aeb4deacd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDM0NjYzfDB8MXxzZWFyY2h8MXx8Y29uc3RydWN0aW9uJTIwc2l0ZXxlbnwwfHx8fDE3ODk0ODAyN3ww&ixlib=rb-4.1.0&q=80&w=1600" width="1600" height="1000" fetchpriority="high" decoding="async" alt="Construction site with crane against dramatic sky" onerror="this.style.display='none'"/>
+    <div class="hero-halo halo-1"></div>
+    <div class="hero-halo halo-2"></div>
+    <div class="hero-halo halo-3"></div>
+    <div class="hero-vignette"></div>
+    <div class="mote mote-1"></div>
+    <div class="mote mote-2"></div>
+    <div class="mote mote-3"></div>
+  </div>
+  <div class="hero-contour" aria-hidden="true">
+    <svg width="100%" height="100%" viewBox="0 0 1200 600" preserveAspectRatio="none" style="opacity:.15">
+      <rect x="0" y="0" width="1200" height="600" fill="none" stroke="#2fe294" stroke-width=".5" stroke-dasharray="4 8"/>
+      <line x1="0" y1="300" x2="1200" y2="300"/>
+      <line x1="600" y1="0" x2="600" y2="600"/>
+    </svg>
+  </div>
+  <div class="hero-shell">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="hero-badge reveal" id="heroBadge"><span class="dot"></span>Licensed General Contractor</div>
+        <h1 class="hero-title reveal reveal-delay-1" id="hero-title">
+          Built on<span class="it"> Schedule.</span><br/><span class="it">Built to Last.</span>
+        </h1>
+        <p class="hero-sub reveal reveal-delay-2">Commercial, residential and industrial construction delivered on schedule. Concrete, steel, and full-scope design-build from concept to keys.</p>
+        <div class="hero-ctas reveal reveal-delay-3">
+          <a class="btn-primary" href="https://wa.me/15550148894" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            Call Now
+          </a>
+          <a class="btn-outline" href="#contact">Request Estimate</a>
+        </div>
+        <div class="stats-row reveal reveal-delay-4">
+          <div class="stat-card"><div class="stat-val" data-count="48">0</div><div class="stat-lbl">Projects</div></div>
+          <div class="stat-card"><div class="stat-val" data-count="97">0</div><div class="stat-lbl">On Schedule</div></div>
+          <div class="stat-card"><div class="stat-val" data-count="14">0</div><div class="stat-lbl">Years</div></div>
+          <div class="stat-card"><div class="stat-val" data-count="62">0</div><div class="stat-lbl">EMR</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div id="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item"><span class="dot"></span>General Contracting</span>
+    <span class="marquee-item"><span class="dot"></span>Design-Build</span>
+    <span class="marquee-item"><span class="dot"></span>Structural Steel</span>
+    <span class="marquee-item"><span class="dot"></span>Concrete & Formwork</span>
+    <span class="marquee-item"><span class="dot"></span>Renovation & Retrofit</span>
+    <span class="marquee-item"><span class="dot"></span>Preconstruction</span>
+    <span class="marquee-item"><span class="dot"></span>Commercial Build</span>
+    <span class="marquee-item"><span class="dot"></span>Industrial Facilities</span>
+    <span class="marquee-item"><span class="dot"></span>Residential</span>
+    <span class="marquee-item"><span class="dot"></span>Turnkey Projects</span>
+    <span class="marquee-item"><span class="dot"></span>General Contracting</span>
+    <span class="marquee-item"><span class="dot"></span>Design-Build</span>
+    <span class="marquee-item"><span class="dot"></span>Structural Steel</span>
+    <span class="marquee-item"><span class="dot"></span>Concrete & Formwork</span>
+    <span class="marquee-item"><span class="dot"></span>Renovation & Retrofit</span>
+    <span class="marquee-item"><span class="dot"></span>Preconstruction</span>
+    <span class="marquee-item"><span class="dot"></span>Commercial Build</span>
+    <span class="marquee-item"><span class="dot"></span>Industrial Facilities</span>
+    <span class="marquee-item"><span class="dot"></span>Residential</span>
+    <span class="marquee-item"><span class="dot"></span>Turnkey Projects</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-tag reveal">Our Story</div>
+  <h2 class="section-title reveal reveal-delay-1">Built on Craft. Backed by Data.</h2>
+  <p class="section-desc reveal reveal-delay-2">Aura Bio·Form Construction is a Portland-based general contractor and design-build firm. We deliver commercial, residential, and industrial projects on schedule and within budget — with self-performed critical work that gives us control over quality, safety, and timelines.</p>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>With 14 years of operation and 48+ projects delivered, we bring a disciplined approach to every build. Our self-performed work spans structural steel erection, concrete and formwork, and masonry — meaning fewer trade dependencies and tighter coordination.</p>
+      <p>Weekly progress reports, GMP transparency, and punch-list accountability are not extras. They are our operating standard.</p>
+      <div class="about-features">
+        <div class="about-feat"><div class="icon">◆</div><div><h4>Buildability First</h4><p>Design-phase input from our construction team prevents costly field changes.</p></div></div>
+        <div class="about-feat"><div class="icon">◆</div><div><h4>Self-Performed Work</h4><p>Structural steel, concrete, and masonry handled in-house for quality control.</p></div></div>
+        <div class="about-feat"><div class="icon">◆</div><div><h4>Zero-Defect Handover</h4><p>Punch lists are addressed before final walkthrough — every time.</p></div></div>
+      </div>
+    </div>
+    <div class="about-stats">
+      <div class="stats-row" style="grid-template-columns:1fr 1fr">
+        <div class="stat-card"><div class="stat-val" data-count="48">0</div><div class="stat-lbl">Projects</div></div>
+        <div class="stat-card"><div class="stat-val" data-count="97">0</div><div class="stat-lbl">On Schedule</div></div>
+        <div class="stat-card"><div class="stat-val" data-count="14">0</div><div class="stat-lbl">Years</div></div>
+        <div class="stat-card"><div class="stat-val" data-count="0">0</div><div class="stat-lbl">TRIR Safety</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" style="background:var(--dark)">
+  <div class="section-tag reveal">What We Do</div>
+  <h2 class="section-title reveal reveal-delay-1">Services</h2>
+  <p class="section-desc reveal reveal-delay-2">From pre-estimating to final punch-out, we cover the full construction lifecycle.</p>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <img src="https://images.unsplash.com/photo-1508450859923-11d7fc47a7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" width="800" height="500" loading="lazy" decoding="async" alt="Construction planning and estimating" onerror="this.style.display='none'"/>
+      <h3>Preconstruction &amp; Estimating</h3>
+      <p>Budget development, value engineering, and constructability reviews before a single beam is placed.</p>
+      <a href="#contact" class="card-link">Learn more →</a>
+    </div>
+    <div class="service-card reveal reveal-delay-1">
+      <img src="https://images.unsplash.com/photo-1567662591?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" width="800" height="500" loading="lazy" decoding="async" alt="General contracting construction site" onerror="this.style.display='none'"/>
+      <h3>General Contracting</h3>
+      <p>Full-scope project management with fixed-price GMP, guaranteed schedule, and single-point accountability.</p>
+      <a href="#contact" class="card-link">Learn more →</a>
+    </div>
+    <div class="service-card reveal reveal-delay-2">
+      <img src="https://images.unsplash.com/photo-1632164661372?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" width="800" height="500" loading="lazy" decoding="async" alt="Concrete formwork construction" onerror="this.style.display='none'"/>
+      <h3>Concrete &amp; Formwork</h3>
+      <p>Cast-in-place concrete systems — from foundations to structural slabs — with PSI-verified mixes.</p>
+      <a href="#contact" class="card-link">Learn more →</a>
+    </div>
+    <div class="service-card reveal">
+      <img src="https://images.unsplash.com/photo-1768677903?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" width="800" height="500" loading="lazy" decoding="async" alt="Structural steel erection" onerror="this.style.display='none'"/>
+      <h3>Structural Steel Erection</h3>
+      <p>Light-gauge and heavy-frame steel erection with full welding and bolted connection capabilities.</p>
+      <a href="#contact" class="card-link">Learn more →</a>
+    </div>
+    <div class="service-card reveal reveal-delay-1">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" width="800" height="500" loading="lazy" decoding="async" alt="Design-build turnkey project" onerror="this.style.display='none'"/>
+      <h3>Design-Build Turnkey</h3>
+      <p>Single-source delivery from concept through certificate of occupancy — one team, one contract.</p>
+      <a href="#contact" class="card-link">Learn more →</a>
+    </div>
+    <div class="service-card reveal reveal-delay-2">
+      <img src="https://images.unsplash.com/photo-1621831337?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" width="800" height="500" loading="lazy" decoding="async" alt="Renovation and retrofit building" onerror="this.style.display='none'"/>
+      <h3>Renovation &amp; Retrofit</h3>
+      <p>Tenant improvements, historic preservation, and facility upgrades with minimal occupancy disruption.</p>
+      <a href="#contact" class="card-link">Learn more →</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="section-tag reveal">Projects</div>
+  <h2 class="section-title reveal reveal-delay-1">Recent Work</h2>
+  <p class="section-desc reveal reveal-delay-2">A selection of projects spanning commercial, industrial, and residential — delivered on schedule.</p>
+  <div class="gallery-collage">
+    <div class="g-item reveal"><img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" width="800" height="1000" loading="lazy" decoding="async" alt="Commercial building project" onerror="this.style.display='none'"/><div class="gallery-overlay"></div></div>
+    <div class="g-item reveal reveal-delay-1"><img src="https://images.unsplash.com/photo-1567662591?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" width="400" height="400" loading="lazy" decoding="async" alt="Construction project" onerror="this.style.display='none'"/><div class="gallery-overlay"></div></div>
+    <div class="g-item reveal reveal-delay-2"><img src="https://images.unsplash.com/photo-1632164661372?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" width="400" height="400" loading="lazy" decoding="async" alt="Steel construction" onerror="this.style.display='none'"/><div class="gallery-overlay"></div></div>
+    <div class="g-item reveal reveal-delay-1"><img src="https://images.unsplash.com/photo-1768677903?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" width="400" height="400" loading="lazy" decoding="async" alt="Construction site" onerror="this.style.display='none'"/><div class="gallery-overlay"></div></div>
+    <div class="g-item reveal reveal-delay-2"><img src="https://images.unsplash.com/photo-1599707254554-027aeb4deacd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200" width="1200" height="675" loading="lazy" decoding="async" alt="Industrial construction project" onerror="this.style.display='none'"/><div class="gallery-overlay"></div></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" style="background:var(--dark)">
+  <div class="section-tag reveal">Testimonials</div>
+  <h2 class="section-title reveal reveal-delay-1">What Owners Say</h2>
+  <p class="section-desc reveal reveal-delay-2">Trusted by developers, owners, and facilities teams across the Pacific Northwest.</p>
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal">
+      <div class="stars">★★★★★</div>
+      <p class="quote">"They delivered our office campus three weeks ahead of schedule with zero safety incidents. The GMP was ironclad — no surprise costs."</p>
+      <p class="author">Margaret Chen</p>
+      <p class="role">Principal, Chen Development Co.</p>
+    </div>
+    <div class="testimonial-card reveal reveal-delay-1">
+      <div class="stars">★★★★★</div>
+      <p class="quote">"The self-performed steel work set them apart. Quality was impeccable and the weekly reports kept us fully informed every step."</p>
+      <p class="author">David Okonkwo</p>
+      <p class="role">Facilities Director, Pacific Logistics</p>
+    </div>
+    <div class="testimonial-card reveal reveal-delay-2">
+      <div class="stars">★★★★★</div>
+      <p class="quote">"From preconstruction to final walkthrough, the punch list was addressed before we ever stepped foot on site. Flawless handover."</p>
+      <p class="author">Sarah Lindqvist</p>
+      <p class="role">Project Owner, Aurora Residential</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-tag reveal">Contact</div>
+  <h2 class="section-title reveal reveal-delay-1">Visit Us or Call</h2>
+  <p class="section-desc reveal reveal-delay-2">Ready to start a project? Get in touch for a free estimate or schedule a site walkthrough.</p>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="contact-item">
+        <div class="c-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div><h4>Headquarters</h4><a href="https://maps.google.com/?q=1400+NW+Everett+St+Portland+OR+97209" target="_blank" rel="noopener">1400 NW Everett St, Portland, OR 97209</a></div>
+      </div>
+      <div class="contact-item">
+        <div class="c-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <div><h4>Phone</h4><a href="tel:+1-555-014-8894">+1-555-014-8894</a></div>
+      </div>
+      <div class="contact-item">
+        <div class="c-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+        <div><h4>Email</h4><a href="mailto:studio@aurabioform.com">studio@aurabioform.com</a></div>
+      </div>
+      <div class="contact-item">
+        <div class="c-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <div><h4>Hours</h4><table class="hours-table"><tr><td>Mon – Fri</td><td>7:00 AM – 5:00 PM</td></tr><tr><td>Sat</td><td>On-call for emergencies</td></tr><tr><td>Sun</td><td>Closed</td></tr></table></div>
+      </div>
+      <div class="contact-item">
+        <div class="c-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <div><h4>License</h4><p>GC-48291 — Bonded &amp; Insured</p></div>
+      </div>
+      <div class="map-wrap"><img src="https://images.unsplash.com/photo-1508450859923-11d7fc47a7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200" width="1200" height="675" loading="lazy" decoding="async" alt="Portland, OR location map" onerror="this.style.display='none'" style="opacity:.7"/></div>
+    </div>
+    <div>
+      <form class="contact-form" onsubmit="event.preventDefault();alert('Thank you! Our team will reach out within 24 hours.');">
+        <input type="text" placeholder="Your Name" required style="width:100%"/>
+        <input type="email" placeholder="Email" required style="width:100%"/>
+        <input type="tel" placeholder="Phone" style="width:100%"/>
+        <textarea placeholder="Describe your project..." required></textarea>
+        <button type="submit" class="btn-submit">Request Estimate</button>
+      </form>
+      <div style="margin-top:1.5rem;display:flex;gap:1rem;flex-wrap:wrap">
+        <a class="btn-primary" href="https://wa.me/15550148894" target="_blank" rel="noopener" style="font-size:.7rem;padding:.8rem 1.4rem">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          WhatsApp
+        </a>
+        <a class="btn-outline" href="tel:+1-555-014-8894" style="font-size:.7rem;padding:.8rem 1.4rem">Call +1-555-014-8894</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="foot-name">Aura Bio·Form</div>
+      <div class="foot-cat">General Contractor · Design-Build</div>
+    </div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p class="footer-copy">© <span id="year"></span> Aura Bio·Form Construction Co. All rights reserved. License GC-48291.</p>
+  </div>
+</footer>
+
+<!-- MOTION LIBRARY -->
+<script type="module">
+import { animate, inView, stagger, scroll } from "https://esm.sh/motion"
+
+// ---------- PRELOADER ----------
+const preloader = document.getElementById('preloader')
+const plBar = preloader.querySelector('.pl-bar i')
+const plNum = preloader.querySelector('.pl-num')
+let progress = 0
+const loadInterval = setInterval(() => {
+  progress += Math.random() * 15 + 5
+  if (progress >= 100) {
+    progress = 100
+    clearInterval(loadInterval)
+    setTimeout(() => preloader.classList.add('done'), 400)
+  }
+  plNum.textContent = Math.floor(progress).toString().padStart(2, '0') + '%'
+}, 120)
+
+// ---------- NAVBAR ----------
+const nav = document.getElementById('nav')
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 50)
+})
+
+// Active nav highlighting
+const sections = document.querySelectorAll('section[id]')
+const navLinks = document.querySelectorAll('[data-nav]')
+window.addEventListener('scroll', () => {
+  let current = ''
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 200) current = s.id
+  })
+  navLinks.forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + current)
+  })
+})
+
+// Mobile menu
+const burger = document.getElementById('nav-burger')
+const mmenu = document.getElementById('mobile-menu')
+const mmClose = document.getElementById('mm-close')
+const mmLinks = document.querySelectorAll('.mobile-link')
+
+function toggleMenu(open) {
+  mmenu.classList.toggle('open', open)
+  burger.setAttribute('aria-expanded', open)
+}
+burger.addEventListener('click', () => toggleMenu(!mmenu.classList.contains('open')))
+mmClose.addEventListener('click', () => toggleMenu(false))
+mmLinks.forEach(l => l.addEventListener('click', () => toggleMenu(false)))
+
+// ---------- REVEAL ON SCROLL ----------
+const revealEls = document.querySelectorAll('.reveal')
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible')
+      revealObserver.unobserve(e.target)
+    }
+  })
+}, { threshold: 0.15 })
+revealEls.forEach(el => revealObserver.observe(el))
+
+// ---------- COUNT-UP STATS ----------
+const statEls = document.querySelectorAll('[data-count]')
+const countObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const target = parseInt(e.target.dataset.count)
+      const duration = 1500
+      const start = performance.now()
+      function update(now) {
+        const elapsed = now - start
+        const progress = Math.min(elapsed / duration, 1)
+        const eased = 1 - Math.pow(1 - progress, 3)
+        const current = Math.floor(eased * target)
+        e.target.textContent = current
+        if (progress < 1) requestAnimationFrame(update)
+        else e.target.textContent = target + (e.target.dataset.count === '62' ? '' : '+')
+      }
+      requestAnimationFrame(update)
+      countObserver.unobserve(e.target)
+    }
+  })
+}, { threshold: 0.5 })
+statEls.forEach(el => countObserver.observe(el))
+
+// ---------- SMOOTH SCROLL ----------
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', (e) => {
+    e.preventDefault()
+    const target = document.querySelector(a.getAttribute('href'))
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  })
+})
+
+// ---------- PREFERS REDUCED MOTION ----------
+const prefersReduced = window.matchMedia('(prefers-reduced-motion:reduce)')
+if (prefersReduced.matches) {
+  document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'))
+  document.querySelectorAll('.pl-bar i').forEach(el => el.style.width = '100%')
+}
+</script>
+</body>
+</html>
